@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\Selenium_workspace\AppiumOoredoo_MOA_8.2_PreProd\testngLocal.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="AndroidAppiumAuto.AppActivity" hash-for-method="ReferFriend">ReferFriend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AndroidAppiumAuto.AppActivity</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReferFriend">
+                  </a> <!-- ReferFriend -->
+                  <span class="method-name">ReferFriend</span>
+                  <em>
+(ReferFriend)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Selenium_workspace\AppiumOoredoo_MOA_8.2_PreProd\testngLocal.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;msisdn&quot; value=&quot;9971357267&quot;/&gt;
+    &lt;parameter name=&quot;config&quot; value=&quot;config.json&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AndroidAppiumAuto.AppActivity&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ReferFriend')
+data.setCell(0, 2, 'AndroidAppiumAuto.AppActivity')
+data.setCell(0, 3, 146581);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">46 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">AndroidAppiumAuto.AppActivity</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">VIP_Validation</span>
+                <br/>
+                <span class="ignored-method-name">Ooredoo_Play</span>
+                <br/>
+                <span class="ignored-method-name">TopUpVoucher</span>
+                <br/>
+                <span class="ignored-method-name">EmailVerification</span>
+                <br/>
+                <span class="ignored-method-name">OTPPageValidation</span>
+                <br/>
+                <span class="ignored-method-name">PendingProfileUpdate</span>
+                <br/>
+                <span class="ignored-method-name">VIPHomePage</span>
+                <br/>
+                <span class="ignored-method-name">BannerDet</span>
+                <br/>
+                <span class="ignored-method-name">UsageHistory</span>
+                <br/>
+                <span class="ignored-method-name">LogOut</span>
+                <br/>
+                <span class="ignored-method-name">SuperNetMini</span>
+                <br/>
+                <span class="ignored-method-name">PageloadTest</span>
+                <br/>
+                <span class="ignored-method-name">Nini</span>
+                <br/>
+                <span class="ignored-method-name">VipRedeemPoints</span>
+                <br/>
+                <span class="ignored-method-name">accountview</span>
+                <br/>
+                <span class="ignored-method-name">Notifications</span>
+                <br/>
+                <span class="ignored-method-name">MaxAccountVerify</span>
+                <br/>
+                <span class="ignored-method-name">UserRegisterDetails</span>
+                <br/>
+                <span class="ignored-method-name">FAQ_TermsConditions</span>
+                <br/>
+                <span class="ignored-method-name">QueryBalanceApi</span>
+                <br/>
+                <span class="ignored-method-name">PyawPyawYu</span>
+                <br/>
+                <span class="ignored-method-name">LiveTVDetails</span>
+                <br/>
+                <span class="ignored-method-name">Report_An_Issue</span>
+                <br/>
+                <span class="ignored-method-name">ResendFetchOTP</span>
+                <br/>
+                <span class="ignored-method-name">NoMsisdn</span>
+                <br/>
+                <span class="ignored-method-name">ByopQueryBalance</span>
+                <br/>
+                <span class="ignored-method-name">DDDPacks</span>
+                <br/>
+                <span class="ignored-method-name">LowAlert</span>
+                <br/>
+                <span class="ignored-method-name">More_Settings</span>
+                <br/>
+                <span class="ignored-method-name">VIPMyBenefits</span>
+                <br/>
+                <span class="ignored-method-name">MultipleAccount</span>
+                <br/>
+                <span class="ignored-method-name">LoginPage</span>
+                <br/>
+                <span class="ignored-method-name">TopUpMPitesan</span>
+                <br/>
+                <span class="ignored-method-name">VIPMyPoints</span>
+                <br/>
+                <span class="ignored-method-name">UpdateLocation</span>
+                <br/>
+                <span class="ignored-method-name">BannerDetails</span>
+                <br/>
+                <span class="ignored-method-name">MoreMyDetails</span>
+                <br/>
+                <span class="ignored-method-name">InvalidMsisdn</span>
+                <br/>
+                <span class="ignored-method-name">VIPMyDiscounts</span>
+                <br/>
+                <span class="ignored-method-name">VipSpinWheel</span>
+                <br/>
+                <span class="ignored-method-name">UserRegisterStatus</span>
+                <br/>
+                <span class="ignored-method-name">DeleteAccount</span>
+                <br/>
+                <span class="ignored-method-name">VIPHomePageShortCutIcons</span>
+                <br/>
+                <span class="ignored-method-name">contextpopup</span>
+                <br/>
+                <span class="ignored-method-name">VIPRedeemPoints</span>
+                <br/>
+                <span class="ignored-method-name">VipProfileUpdate</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AndroidAppiumAuto.AppActivity</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchapp(config.json, 9971357267)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ReferFriend</span>
+                <span class="method-start">20220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=ReferFriend status=SUCCESS method=AppActivity.ReferFriend()[pri:39, instance:Androi...)</span>
+                <span class="method-start">166804 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">166805 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="46" total="47" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="169115" started-at="2021-01-19T06:54:13Z" finished-at="2021-01-19T06:57:02Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="169115" started-at="2021-01-19T06:54:13Z" finished-at="2021-01-19T06:57:02Z">
+      <class name="AndroidAppiumAuto.AppActivity">
+        <test-method status="PASS" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="launchapp" is-config="true" duration-ms="20210" started-at="2021-01-19T06:54:13Z" finished-at="2021-01-19T06:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[config.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9971357267]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapp -->
+        <test-method status="PASS" signature="ReferFriend()[pri:39, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="ReferFriend" duration-ms="146581" started-at="2021-01-19T06:54:33Z" description="ReferFriend" finished-at="2021-01-19T06:57:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReferFriend -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="1" started-at="2021-01-19T06:57:00Z" finished-at="2021-01-19T06:57:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReferFriend status=SUCCESS method=AppActivity.ReferFriend()[pri:39, instance:AndroidAppiumAuto.AppActivity@86be70a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="tearDown" is-config="true" duration-ms="2280" started-at="2021-01-19T06:57:00Z" finished-at="2021-01-19T06:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="crashdetails(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="crashdetails" is-config="true" duration-ms="0" started-at="2021-01-19T06:57:02Z" finished-at="2021-01-19T06:57:02Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated crashdetails.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated crashdetails.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.afterRun(TestRunner.java:725)
+at org.testng.TestRunner.run(TestRunner.java:509)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crashdetails -->
+      </class> <!-- AndroidAppiumAuto.AppActivity -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

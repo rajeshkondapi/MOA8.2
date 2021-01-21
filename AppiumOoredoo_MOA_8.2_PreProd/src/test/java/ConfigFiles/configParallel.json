@@ -1,0 +1,18 @@
+{
+	"capabilities": {
+		"maxInstances": "2",
+		"platformName": "Android",
+		"automationName": "UiAutomator2",
+		"deviceName": "uiautomatorviewer",
+		"systemPort": "8201",
+		"appPackage": "com.ooredoo.selfcare",
+		"appActivity": "com.ooredoo.selfcare.Ooredoo",
+		"name": " OM Sample Test",
+		"app": "bs://bb554f07e315ef392055bb1f5e8fb4956fd3e017"
+	},
+	"environment": {
+		"Gpixel": {
+			"device": "Google Pixel 3"
+		}
+	}
+}
