@@ -202,12 +202,12 @@ public class CommonMethods extends ByDeclarations {
 				return appcheck;
 			} else {
 				System.out.println("Not displayed");
-				logger.log(LogStatus.FAIL, "The Element " + elements + " could not find from the application please try again !");
+				logger.log(LogStatus.INFO, "The Element " + elements + " could not find from the application please try again !");
 				
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			logger.log(LogStatus.FAIL, "The Element " + elements + " could not find from the application please try again !");
+			logger.log(LogStatus.INFO, "The Element " + elements + " could not find from the application please try again !");
 			//logger.log(LogStatus.FAIL, "Exception occured: "+e.getMessage());
 			e.printStackTrace();
 		}
@@ -1115,7 +1115,7 @@ public class CommonMethods extends ByDeclarations {
 			
 		} 
 		ClickEvents("EnterSearch");	
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		getResult1("pass");			
 		int numberoftitles = driver.findElements(By.xpath(obj.getProperty("DataVoiceValidity"))).size();			
 		if(numberoftitles!=0) {
@@ -1440,7 +1440,7 @@ public class CommonMethods extends ByDeclarations {
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			logger.log(LogStatus.FAIL, "Exception occured: "+e.getMessage());
+			//logger.log(LogStatus.FAIL, "Exception occured: "+e.getMessage());
 			e.printStackTrace();
 		}
 

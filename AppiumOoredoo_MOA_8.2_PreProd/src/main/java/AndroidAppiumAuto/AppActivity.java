@@ -64,7 +64,7 @@ public class AppActivity extends SupportMethods {
 
 	
 	
-	@Test(description = "Login Pages with NoMsisdn", priority = 1, enabled =  false)
+	@Test(description = "Login Pages with NoMsisdn", priority = 1, enabled =  true)
 	//@org.testng.annotations.Parameters(value={"msisdn"})
 	public void NoMsisdn() throws Exception {
 		logger = extent.startTest("Login Page With No Msisdn Scenarios", "Description to Login Page With No Msisdn");
@@ -73,7 +73,7 @@ public class AppActivity extends SupportMethods {
 		withoutmsisdn();
 	}
 	
-	@Test(description = "Login Pages InvalidMs", priority = 2, enabled =  false)
+	@Test(description = "Login Pages InvalidMs", priority = 2, enabled =  true)
 	@org.testng.annotations.Parameters(value={"msisdn"})
 	public void InvalidMsisdn(String msisdn) throws Exception {
 		logger = extent.startTest("Login Page Invalid Msisdn Scenarios", "Description to Login Page Invalid Msisdn");
@@ -83,7 +83,7 @@ public class AppActivity extends SupportMethods {
 	}
 		
 	
-	@Test(description = "Login Pages Correct", priority = 3, enabled =  false)
+	@Test(description = "Login Pages Correct", priority = 3, enabled =  true)
 	@org.testng.annotations.Parameters(value={"msisdn"})
 	public void LoginPage(String msisdn) throws Exception {
 		logger = extent.startTest("Login Page Success Scenario", "Description to LoginPage Success Scenario");
@@ -91,7 +91,7 @@ public class AppActivity extends SupportMethods {
 		loginpage(msisdn);			
 	}
 	
-	@Test(description = "OTP Page Validation", priority = 4, enabled =  false)
+	@Test(description = "OTP Page Validation", priority = 4, enabled =  true)
 	@org.testng.annotations.Parameters(value={"msisdn"})
 	public void OTPPageValidation(String msisdn) throws Exception {
 		logger = extent.startTest("OTP Page Validation", "Description to OTP Page Validation");
@@ -101,7 +101,7 @@ public class AppActivity extends SupportMethods {
 	}
 	
 	
-	@Test(description = "Resend & Fetch OTP", priority = 5, enabled =  false)
+	@Test(description = "Resend & Fetch OTP", priority = 5, enabled =  true)
 	@org.testng.annotations.Parameters(value={"msisdn"})
 	public void ResendFetchOTP(String msisdn) throws Exception {
 	logger = extent.startTest("Resend & Fetch OTP from DB", "Description to Resend & Fetch OTP from DB");	
@@ -110,7 +110,7 @@ public class AppActivity extends SupportMethods {
 	}
 	
 	
-	@Test(description =  "Contextual Popup", priority = 6, enabled =  false)
+	@Test(description =  "Contextual Popup", priority = 6, enabled =  true)
 	public void contextpopup() throws Exception  {
 		logger = extent.startTest("Context Popup", "Description to contextul  popup");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -118,14 +118,14 @@ public class AppActivity extends SupportMethods {
 	}
 	
 	
-	@Test(description =  "Banners Details", priority = 7, enabled =  false)
+	@Test(description =  "Banners Details", priority = 7, enabled =  true)
 	public void BannerDetails() throws Exception  {
 		logger = extent.startTest("Banner Details(Manual Verification Required to Check Banners Displayed on the App)", "Description to BannerDetails (Manual Verification Required to Check Banners Displayed on the App)");
 		AutoBannerheader();
 	}
 	
 	
-	@Test(description = "Top Up - Voucher", priority = 8, enabled =  false)
+	@Test(description = "Top Up - Voucher", priority = 8, enabled =  true)
 	@org.testng.annotations.Parameters(value={"msisdn"})
 	public void TopUpVoucher(String msisdn) throws JSONException, InterruptedException, Exception {
 		
@@ -147,7 +147,7 @@ public class AppActivity extends SupportMethods {
 	
 
 	// log done
-	@Test(description = "Top Up - MPitesan", priority = 9, enabled =  false)
+	@Test(description = "Top Up - MPitesan", priority = 9, enabled =  true)
 	@org.testng.annotations.Parameters(value={"msisdn"})
 	public void TopUpMPitesan(String msisdnxml) throws Exception {
 		// System.out.println("MPite init()");
@@ -171,14 +171,14 @@ public class AppActivity extends SupportMethods {
 		QuickLinksPlus();
 	}*/
 	
-	@Test(description =  "Notifications", priority = 11, enabled =  false)
+	@Test(description =  "Notifications", priority = 11, enabled =  true)
 	public void Notifications() throws Exception  {
 		logger = extent.startTest("Bell Icon Notifications Redirection", "Description to Notifications  Redirections");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		bellnotification();		
 	}	
 	
-	@Test(description = "VIP MyBenefits", priority = 12, enabled =  false)
+	@Test(description = "VIP MyBenefits", priority = 12, enabled =  true)
 	public void VIPMyBenefits() throws Exception {
 		logger = extent.startTest("VIPMyBenefits", "Description to MyBenefits");	
 		//Thread.sleep(5000);
@@ -186,14 +186,14 @@ public class AppActivity extends SupportMethods {
 		MyBenefits();		
 		}
 	
-	@Test(description = "VIP", priority = 13, enabled =  false)
+	@Test(description = "VIP", priority = 13, enabled =  true)
 	public void VIP_Validation() throws Exception {
 		logger = extent.startTest("VIP User Details", "Description to VIP User Details");
 		vipvaliddb();
 	}
 	
 	
-	@Test(description =  "Usage History", priority = 14, enabled =  false)
+	@Test(description =  "Usage History", priority = 14, enabled =  true)
 	public void UsageHistory() throws Exception  {
 		logger = extent.startTest("User Usage History", "Description to Usage History");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -202,7 +202,7 @@ public class AppActivity extends SupportMethods {
 	
 	
 	
-	@Test(description =  "UserRegisterStatus", priority = 15, enabled =  false)
+	@Test(description =  "UserRegisterStatus", priority = 15, enabled =  true)
 	public void UserRegisterStatus() throws Exception  {
 		logger = extent.startTest("User SIM Registration Status", "Description to User Registration Status");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -210,7 +210,7 @@ public class AppActivity extends SupportMethods {
 	}
 	
 	
-	@Test(description =  "UserRegisterDetails", priority = 16, enabled =  false)
+	@Test(description =  "UserRegisterDetails", priority = 16, enabled =  true)
 	public void UserRegisterDetails() throws Exception  {
 		logger = extent.startTest("User SIM Registration Details", "Description to User Registration Details");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -291,7 +291,7 @@ public class AppActivity extends SupportMethods {
 	public void VIPHomePage() throws Exception, InterruptedException, CustomException {
 		logger = extent.startTest("VIP HomePage", "Description to VIPHomePage");
 		contextmap.clear();
-		//driver.getSessionDetails();
+		ClickEvents("homebtton");
 		vipnewhomepages();		
 	}	
 	
@@ -746,7 +746,7 @@ public class AppActivity extends SupportMethods {
 	
 	// Make false - 08//01/21
 	
-	@Test(description = "ReferFriend", priority = 39, enabled =  true)
+	@Test(description = "ReferFriend", priority = 39, enabled =  false)
 	public void ReferFriend() throws Exception {
 		logger = extent.startTest("Refer A Friend", "Refer A Friend");
 		propertyelements();
@@ -1223,15 +1223,16 @@ public class AppActivity extends SupportMethods {
 			e.printStackTrace();
 		}
 	  
-	         
+	         String xy = "Rajesh";
+	         char[] c = xy.toCharArray();
 	       	
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		//cap.setCapability(MobileCapabilityType.UDID, "520074b4ee426523");
 		//Oppo
-		//cap.setCapability(MobileCapabilityType.UDID, "V4QKLNTK6PBYPJCU");		
-		cap.setCapability(MobileCapabilityType.UDID, "192.168.0.103:5555");
+		cap.setCapability(MobileCapabilityType.UDID, "V4QKLNTK6PBYPJCU");		
+		//cap.setCapability(MobileCapabilityType.UDID, "192.168.0.103:5555");
 		cap.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
-		cap.setCapability("noReset", "true");
+		//cap.setCapability("noReset", "true");
 		System.setProperty("webdriver.http.factory", "apache");
 		cap.setCapability("autoWebView", "true");
 		//cap.setCapability("unicodeKeyboard", "true");

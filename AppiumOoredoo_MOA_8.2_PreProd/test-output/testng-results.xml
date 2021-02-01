@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="46" total="47" passed="1">
+<testng-results skipped="15" failed="0" ignored="32" total="47" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="169115" started-at="2021-01-19T06:54:13Z" finished-at="2021-01-19T06:57:02Z">
+  <suite name="Suite" duration-ms="32557" started-at="2021-01-28T11:27:31Z" finished-at="2021-01-28T11:28:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="169115" started-at="2021-01-19T06:54:13Z" finished-at="2021-01-19T06:57:02Z">
+    <test name="Test" duration-ms="32557" started-at="2021-01-28T11:27:31Z" finished-at="2021-01-28T11:28:03Z">
       <class name="AndroidAppiumAuto.AppActivity">
-        <test-method status="PASS" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="launchapp" is-config="true" duration-ms="20210" started-at="2021-01-19T06:54:13Z" finished-at="2021-01-19T06:54:33Z">
+        <test-method status="FAIL" signature="launchapp(java.lang.String, java.lang.String)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="launchapp" is-config="true" duration-ms="32206" started-at="2021-01-28T11:27:31Z" finished-at="2021-01-28T11:28:03Z">
           <params>
             <param index="0">
               <value>
@@ -20,63 +20,1910 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapp -->
-        <test-method status="PASS" signature="ReferFriend()[pri:39, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="ReferFriend" duration-ms="146581" started-at="2021-01-19T06:54:33Z" description="ReferFriend" finished-at="2021-01-19T06:57:00Z">
+        <test-method status="SKIP" signature="NoMsisdn()[pri:1, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="NoMsisdn" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Login Pages with NoMsisdn" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ReferFriend -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="1" started-at="2021-01-19T06:57:00Z" finished-at="2021-01-19T06:57:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ReferFriend status=SUCCESS method=AppActivity.ReferFriend()[pri:39, instance:AndroidAppiumAuto.AppActivity@86be70a] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- NoMsisdn -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="tearDown" is-config="true" duration-ms="2280" started-at="2021-01-19T06:57:00Z" finished-at="2021-01-19T06:57:02Z">
+        <test-method status="SKIP" signature="InvalidMsisdn(java.lang.String)[pri:2, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="InvalidMsisdn" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Login Pages InvalidMs" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidMsisdn -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="LoginPage(java.lang.String)[pri:3, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="LoginPage" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Login Pages Correct" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="OTPPageValidation(java.lang.String)[pri:4, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="OTPPageValidation" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="OTP Page Validation" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OTPPageValidation -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="ResendFetchOTP(java.lang.String)[pri:5, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="ResendFetchOTP" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Resend &amp; Fetch OTP" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResendFetchOTP -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="contextpopup()[pri:6, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="contextpopup" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Contextual Popup" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextpopup -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="BannerDetails()[pri:7, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="BannerDetails" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Banners Details" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BannerDetails -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="TopUpVoucher(java.lang.String)[pri:8, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="TopUpVoucher" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Top Up - Voucher" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TopUpVoucher -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="TopUpMPitesan(java.lang.String)[pri:9, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="TopUpMPitesan" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Top Up - MPitesan" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TopUpMPitesan -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="Notifications()[pri:11, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="Notifications" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Notifications" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Notifications -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="VIPMyBenefits()[pri:12, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="VIPMyBenefits" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="VIP MyBenefits" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VIPMyBenefits -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="VIP_Validation()[pri:13, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="VIP_Validation" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="VIP" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VIP_Validation -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="UsageHistory()[pri:14, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="UsageHistory" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="Usage History" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsageHistory -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="UserRegisterStatus()[pri:15, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="UserRegisterStatus" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="UserRegisterStatus" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegisterStatus -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="UserRegisterDetails()[pri:16, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="UserRegisterDetails" duration-ms="0" started-at="2021-01-28T11:28:03Z" description="UserRegisterDetails" finished-at="2021-01-28T11:28:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited normally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WLPT761', ip: '172.16.44.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+Ordinal0 [0x00B6ECE3+3337443]
+Ordinal0 [0x00A4F041+2158657]
+Ordinal0 [0x008D6FA8+618408]
+Ordinal0 [0x0084E48A+58506]
+Ordinal0 [0x0084C38A+50058]
+Ordinal0 [0x00875E8E+220814]
+Ordinal0 [0x00875BFC+220156]
+Ordinal0 [0x0087181B+202779]
+Ordinal0 [0x00853D74+81268]
+Ordinal0 [0x00854D6E+85358]
+Ordinal0 [0x00854CF9+85241]
+Ordinal0 [0x00A66F2C+2256684]
+GetHandleVerifier [0x00CF2FAC+1478332]
+GetHandleVerifier [0x00CF2AFD+1477133]
+GetHandleVerifier [0x00CFAAD8+1509864]
+GetHandleVerifier [0x00CF369E+1480110]
+Ordinal0 [0x00A5D6BD+2217661]
+Ordinal0 [0x00A689AB+2263467]
+Ordinal0 [0x00A68AEF+2263791]
+Ordinal0 [0x00A7D363+2347875]
+BaseThreadInitThunk [0x77776359+25]
+RtlGetAppContainerNamedObjectPath [0x77AF8944+228]
+RtlGetAppContainerNamedObjectPath [0x77AF8914+180]
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at AndroidAppiumAuto.CommonMethods.initmethods(CommonMethods.java:68)
+at AndroidAppiumAuto.AppActivity.launchapp(AppActivity.java:1247)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegisterDetails -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="crashdetails(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="crashdetails" is-config="true" duration-ms="0" started-at="2021-01-19T06:57:02Z" finished-at="2021-01-19T06:57:02Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated crashdetails.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated crashdetails.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.afterRun(TestRunner.java:725)
-at org.testng.TestRunner.run(TestRunner.java:509)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="SKIP" signature="crashdetails(org.testng.ITestResult)[pri:0, instance:AndroidAppiumAuto.AppActivity@86be70a]" name="crashdetails" is-config="true" duration-ms="0" started-at="2021-01-28T11:28:03Z" finished-at="2021-01-28T11:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crashdetails -->

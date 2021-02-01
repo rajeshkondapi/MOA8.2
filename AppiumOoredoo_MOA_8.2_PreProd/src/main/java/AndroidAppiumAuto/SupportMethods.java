@@ -1877,16 +1877,9 @@ else {
 
 	public void norecords() throws Exception {
 		try {
-			String val = "";
-			//DecimalFormat df2 = new DecimalFormat("#.##");
-			try {
-				val = AppValidationInLoop("NoRecordFound");
-			} catch(Exception ex) {
-			}
-			if(val.equalsIgnoreCase("No record found")) {
-				//System.out.println(" No Records Found ");
+			if(driver.findElements(By.xpath(obj.getProperty("NoRecordFound"))).size()!=0) {
 				getResult1("pass");
-				//return;
+				logger.log(LogStatus.PASS, "No Records Found");
 			}
 			else {
 				logger.log(LogStatus.INFO, "Title :  " + PacksDetails("MyTitleName") + "  Validity :  " +PacksDetails("loanvalidity") +"  Description :  "+PacksDetails("buypkdatavalidity"));
@@ -2013,6 +2006,7 @@ else {
 		beforebalancevipCheck();		
 		String beforebonus =  datavoice();
 		System.out.println("Before bonus value is ="+beforebonus);
+		Thread.sleep(2000);
 		if(driver.findElements(By.xpath(obj.getProperty("DDDPack"))).size()!=0) {
 		ClickEvents("DDDPack");
 		getResult1("pass");			
@@ -2491,7 +2485,7 @@ else {
 		if(driver.findElements(By.xpath(obj.getProperty("SaluateClose"))).size()!=0) {			
 		ClickEvents("SaluateClose");
 		System.out.println("closed");
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		logger.log(LogStatus.PASS, "Salutation Nudge Closed");
 		getResult1("pass");
 		} else {			
@@ -2712,6 +2706,9 @@ else {
 			for(int m =0; m<5; m++) {									
 				logger.log(LogStatus.PASS, "Clicked "+ shortlist.get(m).getText());
 				shortlist.get(m).click();
+				if(m==4) {
+					return;
+				}
 				Thread.sleep(4000);
 				//waituntillfound("MyBenefitsheadertitle");
 				//getResult1("pass");	
@@ -2803,21 +2800,19 @@ else {
 			ClickEvents("AddOption");
 			
 			scrolltill("ReferAFrindText", "Share App");
-			waituntillfound("ReferAFrindText");
+			//waituntillfound("ReferAFrindText");
+			Thread.sleep(2000);
 			getResult1("pass");
 			ClickEvents("ReferAFrindText");
 			getResult1("pass");
 			waituntillfound("Refer_Earn50Points");
-			for(int i=0; i<2; i++) {
+			for(int i=0; i<3; i++) {
+				
 				if(i==0) {
 			ClickEvents("Refer_Whatsapptxt");
+			Thread.sleep(2000);
 			logger.log(LogStatus.INFO, "Clicked on Whatsapp");
-				} else {
-					ClickEvents("Refer_ViberTxt");
-					logger.log(LogStatus.INFO, "Clicked on Viber");
-				}
-			Thread.sleep(1500);
-			if(!driver.getCurrentPackage().equals("com.ooredoo.selfcare")) {
+			if(driver.getCurrentPackage().equals("com.whatsapp")) {
 				System.out.println(driver.getCurrentPackage());
 				cap.setCapability("appActivity", "com.whatsapp");
 				cap.setCapability("appPackage", "com.whatsapp");
@@ -2827,22 +2822,61 @@ else {
 					driver.navigate().back();
 				}
 				
-			} else {
-				if(AppValidation("success_or_failure_pop_up_msg").equals("App isn't installed in your device")) {
-					logger.log(LogStatus.PASS, "App isn't installed in your device");
-					getResult1("pass");
-					ClickEvents("success_or_failure_pop_up_OK_button");
+			} 
+				} else if(i==1) {
+					ClickEvents("Refer_ViberTxt");
+					Thread.sleep(2000);
+					logger.log(LogStatus.INFO, "Clicked on Viber");	
+					if(AppValidation("success_or_failure_pop_up_msg").equals("App isn't installed in your device")) {
+						logger.log(LogStatus.PASS, "App isn't installed in your device");
+						getResult1("pass");
+						ClickEvents("success_or_failure_pop_up_OK_button");
+						Thread.sleep(1500);
+						}
+				
+				} else if(i==2) {
+					ClickEvents("Refer_FaceBook");
+					Thread.sleep(2000);
+					logger.log(LogStatus.INFO, "Share on Facebook");
+					if(driver.getCurrentPackage().equals("com.facebook.katana")) {
+						System.out.println(driver.getCurrentPackage());
+						cap.setCapability("appActivity", "com.facebook.katana");
+						cap.setCapability("appPackage", "com.facebook.katana");
+						getResult1("pass");
+						logger.log(LogStatus.INFO, "Navigated to Fb");						
+						Thread.sleep(1500);
+						
+						/*String postmessage = "Shared Link: Invite your friend's now\r\n" + 
+								"						Download My Ooredoo APP now by using below link and get 50 VIP Points.";
+						
+						String postfb = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc ='"+postmessage+"']")).getText();
+						
+						if(postfb.contains("Invite your friend's now")) {
+							logger.log(LogStatus.PASS, postmessage);
+						} else {
+							logger.log(LogStatus.FAIL, "No Post available to share in FB");
+						}*/
+						ClickEvents("Refer_FbPost");						
+					} else {
+						if(AppValidation("success_or_failure_pop_up_msg").equals("App isn't installed in your device")) {
+							logger.log(LogStatus.PASS, "App isn't installed in your device");
+							getResult1("pass");
+							ClickEvents("success_or_failure_pop_up_OK_button");
+							Thread.sleep(1500);
+							}
 					}
-				}
-			}
 			
+			
+				}			
+			
+			}
 			if(driver.findElements(By.xpath(obj.getProperty("Refer_Earn50Points"))).size()!=0) {				
 				logger.log(LogStatus.PASS, AppValidation("Refer_Titile"));
-				if(AppValidation("Refer_Earn50Points").equals("Refer a friend to My Ooredoo App and get 50 VIP points.")) {
+				if(AppValidation("Refer_Earn50Points").equals("Refer a friend to My Ooredoo App and get 100 VIP points.")) {
 					getResult1("pass");					
 					imagedimesions("Refer_Image");
 					logger.log(LogStatus.PASS, AppValidation("InviteFrndTxt"));
-					logger.log(LogStatus.PASS, "Refer a friend to My Ooredoo App and get 50 VIP points.");					
+					logger.log(LogStatus.PASS, "Refer a friend to My Ooredoo App and get 100 VIP points.");					
 					logger.log(LogStatus.PASS, AppValidation("WhatsappText") +" , "+ AppValidation("FbTxt") +" , "+AppValidation("SMStxt")+" , "+AppValidation("ViberTxt"));
 					logger.log(LogStatus.PASS, AppValidation("MyRewards"));
 					logger.log(LogStatus.PASS, AppValidation("MyRewardsDesc"));
@@ -2867,7 +2901,7 @@ else {
 					waituntillfound("VipNewTitle");
 					if(AppValidation("VipNewTitle").equals("Congratulations")) {
 						String sendinvitetext = "We will send the invite to your friends via SMS to join My Ooredoo APP";
-						String Mesgrefertext = "You will receive 50 VIP points for every friend that logs-in to the My Ooredoo App for the first time with your link. Additional 50 points on 1st pack purchase or Top-up";
+						String Mesgrefertext = "You will receive 100 VIP points for every friend that logs-in to the My Ooredoo App for the first time with your link. Additional 100 points on 1st pack purchase or Top-up";
 						if(AppValidation("AllTitles").equals(sendinvitetext) && AppValidation("VipNewMessage").equals(Mesgrefertext)) {
 							getResult1("pass");
 							Dimension  uppertext = driver.findElement(By.xpath(obj.getProperty("AllTitles"))).getSize();

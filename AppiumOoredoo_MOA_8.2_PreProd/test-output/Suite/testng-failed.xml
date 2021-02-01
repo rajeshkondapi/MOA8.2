@@ -7,11 +7,25 @@
     <classes>
       <class name="AndroidAppiumAuto.AppActivity">
         <methods>
+          <include name="VIP_Validation"/>
+          <include name="ResendFetchOTP"/>
+          <include name="NoMsisdn"/>
+          <include name="TopUpVoucher"/>
+          <include name="launchapp"/>
+          <include name="VIPMyBenefits"/>
+          <include name="LoginPage"/>
+          <include name="OTPPageValidation"/>
+          <include name="tearDown"/>
+          <include name="TopUpMPitesan"/>
+          <include name="BannerDetails"/>
+          <include name="UsageHistory"/>
+          <include name="InvalidMsisdn"/>
           <include name="getResult"/>
           <include name="crashdetails"/>
-          <include name="launchapp"/>
-          <include name="tearDown"/>
-          <include name="ReferFriend"/>
+          <include name="UserRegisterStatus"/>
+          <include name="Notifications"/>
+          <include name="contextpopup"/>
+          <include name="UserRegisterDetails"/>
         </methods>
       </class> <!-- AndroidAppiumAuto.AppActivity -->
     </classes>
